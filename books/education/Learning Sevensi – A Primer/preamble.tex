@@ -1,0 +1,56 @@
+%%  Font setup:  %%
+
+\usepackage{fontspec}
+\setmainfont[ItalicFont = {* Bold}, BoldFont = {* ExtraBold}]{NanumMyeongjo}
+\setsansfont[ItalicFont = {* Bold}, BoldFont = {* ExtraBold}]{NanumGothic}
+
+%%  Language setup:  %%
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{korean}  %  used as stand-in for sevensi, for now
+
+%%  Underline setup:  %%
+
+\usepackage[normalem]{ulem}
+\setlength{\ULdepth}{.2ex}
+
+%%  Hypertext setup:  %%
+
+\usepackage{hyperref}
+\hypersetup{
+pdfinfo={
+Title={Learning Sevensi: A Primer},
+Author={Benjamin Shoemake},
+Subject={Sevensi language},
+Creator={XeLaTeX}
+},
+pdfpagemode=UseNone,
+pdfdisplaydoctitle=true,
+pdfpagelayout=TwoPageRight
+}
+
+%%  Date/time setup:  %%
+
+\usepackage[english, cleanlook]{isodate}
+
+%%  Additional packages:  %%
+
+\usepackage{metalogo}
+
+%%  Mark overfilling:  %%
+
+\overfullrule=1em
+
+%%  Hyphenation rules:  %%
+
+\hyphenation{Han-gul}
+
+%%  Link formatting:  %%
+
+\newcommand{\uriref}[1]{\dashuline{\href{#1}{#1}}}
+\newcommand{\urireftext}[2]{\dashuline{\href{#1}{#2}}}
+
+%%  Page breaks:  %%
+
+\newcommand{\emptybreak}[1][empty]{\thispagestyle{#1}\pagestyle{empty}\cleardoublepage\pagestyle{#1}}
