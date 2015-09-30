@@ -1,7 +1,35 @@
-%%  Preamble:  %%
-
-\input{"preamble.tex"}
+\documentclass{style}
+\overfullrule=1em
+\hypersetup{
+pdfinfo={
+Title={Classical Sevensi: History and Development},
+Author={Benjamin Shoemake},
+Subject={Sevensi history, Sevensi language},
+Creator={XeLaTeX}
+},
+pdfpagemode=UseNone,
+pdfdisplaydoctitle=true,
+pdfpagelayout=TwoPageRight
+}
+\hyphenation{Han-gul}
 
 %%  Document:  %%
 
-\input{"document.tex"}
+\begin{document}
+
+%%  Frontmatter:  %%
+
+\input{"frontmatter.tex"}
+
+%%  Content:  %%
+
+\input{"00.tex"}
+\input{"01.tex"}
+
+%%  Endmatter:  %%
+
+\input{"backmatter.tex"}
+
+%%  Appendices:  %%
+
+\end{document}
