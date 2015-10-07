@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{leafbk}[2015/09/15 Book class for LaTeX]
+\ProvidesClass{style}
 
 %%  Class loading and defaults:  %%
 
@@ -19,8 +19,10 @@
 \RequirePackage{fontspec, polyglossia}
 \setmainlanguage{english}
 \setmainfont{Junicode}
-\setotherlanguage{korean}  %  used as stand-in for sevensi, for now
-\newfontfamily\koreanfont[ItalicFont = {Nanum Brush Script}, BoldFont = {* ExtraBold}, Script = Hangul]{NanumMyeongjo}
+\newfontfamily\hangulfont[ItalicFont = {Nanum Brush Script}, BoldFont = {* Bold}, Script = Hangul]{NanumMyeongjo}
+\newcommand{\hangul}[1]{{\hangulfont #1}}
+\newfontfamily\hanzifont[ItalicFont = {Libian SC}, BoldFont = {* Bold}, CJKShape = Simplified, CharacterWidth = Proportional, Script = CJK]{Songti SC}
+\newcommand{\han}[1]{{\hanzifont #1}}
 
 %%  List formatting:  %%
 
@@ -41,7 +43,7 @@
 
 %%  Additional packages:  %%
 
-\RequirePackage{metalogo}
+\RequirePackage{metalogo, calc}
 
 %%  Option handling:  %%
 
@@ -49,28 +51,22 @@
 
 \ProcessOptions\relax
 
-%%  Defaults:  %%
+%%  Numbering:  %%
 
-\openany
-\headstyles{dowding}
+\setsecnumdepth{chapter}
 
-%%  Matter handling:  %%
+%%  Captions:  %%
 
-\renewcommand{\frontmatter}{
-    \openright
-    \pagenumbering{roman}
-    \pagestyle{simple}
-}
-\renewcommand{\mainmatter}{
-    \openany
-    \pagenumbering{arabic}
-    \pagestyle{simple}
-}
-\renewcommand{\backmatter}{
-    \openright
-}
+\captionnamefont{\small\itshape}
+\captiontitlefont{\small}
+\captiondelim{ – }
 
 %%  Link formatting:  %%
 
 \newcommand{\uriref}[1]{\dashuline{\href{#1}{#1}}}
 \newcommand{\urireftext}[2]{\dashuline{\href{#1}{#2}}}
+
+%%  Defaults:  %%
+
+\openany
+\headstyles{dowding}
