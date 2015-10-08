@@ -3,7 +3,7 @@
 
 %%  Class loading and defaults:  %%
 
-\LoadClass[letterpaper, 17pt, openany, twoside]{memoir}
+\LoadClass[letterpaper, 17pt, openany, twoside, extrafontsizes]{memoir}
 
 %%  Page geometry:  %%
 
