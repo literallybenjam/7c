@@ -4,43 +4,43 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&subset=latin,latin-ext);
 
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC ExtraLight), local(SourceHanSansSC-ExtraLight), local(Source Han Sans ExtraLight), local(SourceHanSans-ExtraLight), url(Han-200.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR ExtraLight), local(SourceHanSansKR-ExtraLight), local(Source Han Sans ExtraLight), local(SourceHanSans-ExtraLight), url(KR-200.woff);
     font-style: normal;
     font-weight: 200;
     font-stretch: normal;
 }
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC Light), local(SourceHanSansSC-Light), local(Source Han Sans Light), local(SourceHanSans-Light), url(Han-300.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR Light), local(SourceHanSansKR-Light), local(Source Han Sans Light), local(SourceHanSans-Light), url(KR-300.woff);
     font-style: normal;
     font-weight: 300;
     font-stretch: normal;
 }
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC Normal), local(SourceHanSansSC-Normal), local(Source Han Sans Normal), local(SourceHanSans-Normal), url(Han-400.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR Normal), local(SourceHanSansKR-Normal), local(Source Han Sans Normal), local(SourceHanSans-Normal), url(KR-400.woff);
     font-style: normal;
     font-weight: 400;
     font-stretch: normal;
 }
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC Medium), local(SourceHanSansSC-Medium), local(Source Han Sans Medium), local(SourceHanSans-Medium), url(Han-600.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR Medium), local(SourceHanSansKR-Medium), local(Source Han Sans Medium), local(SourceHanSans-Medium), url(KR-600.woff);
     font-style: normal;
     font-weight: 600;
     font-stretch: normal;
 }
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC Bold), local(SourceHanSansSC-Bold), local(Source Han Sans Bold), local(SourceHanSans-Bold), url(Han-700.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR Bold), local(SourceHanSansKR-Bold), local(Source Han Sans Bold), local(SourceHanSans-Bold), url(KR-700.woff);
     font-style: normal;
     font-weight: 700;
     font-stretch: normal;
 }
 @font-face {
-    font-family: Source Han Sans;
-    src: local(Source Han Sans SC Heavy), local(SourceHanSansSC-Heavy), local(Source Han Sans Heavy), local(SourceHanSans-Heavy), url(Han-900.woff);
+    font-family: Source Han Sans KR;
+    src: local(Source Han Sans KR Heavy), local(SourceHanSansKR-Heavy), local(Source Han Sans Heavy), local(SourceHanSans-Heavy), url(KR-900.woff);
     font-style: normal;
     font-weight: 900;
     font-stretch: normal;
